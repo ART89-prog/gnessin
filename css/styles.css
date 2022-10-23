@@ -703,13 +703,13 @@ header .logo-mob {
     position: absolute;
     content: "";
     top: -38px;
-    left: 0;
+    left: 25px;
     background: url(../images/quote.svg);
 }
 .quote_info {
     max-width: 599px;
     width: 100%;
-    margin-left: 46px;
+    margin-left: 66px;
 }
 .quote_info-text {
     font-style: italic;
@@ -732,13 +732,13 @@ header .logo-mob {
     content: "";
     width: 258px;
     height: 169px;
-    right: -75px;
-    top: -66px;
+    right: -95px;
+    top: -52px;
     background: url(../images/sign.png);
 }
 .quote_photo {
     position: absolute;
-    right: 0;
+    right: 19px;
     bottom: -106px;
 }
 .quote_photo img {
@@ -919,7 +919,7 @@ header .logo-mob {
 .callback_wrap {
     background: #F2EEE9;
     border-radius: 8px;
-    padding: 88px 0px 96px;
+    padding: 86px 0px 96px;
     position: relative;
     z-index: 1;
 }
@@ -992,7 +992,7 @@ form button {
     font-size: 20px;
     line-height: 32px;
     color: #FFFFFF; 
-    margin-top: 16px;
+    margin-top: 6px;
 }
 .form-politic {
     font-weight: 400;
@@ -1037,18 +1037,18 @@ form button {
 
 
 footer {
-    padding: 60px 0 20px;
+    padding: 77px 0 20px;
     background: #F2EEE9;
 }
 .footer_items {
     display: flex;
     justify-content: space-between;
-    margin-left: -117px;
+    margin-left: -110px;
     margin-bottom: 92px;
 }
 .footer_items > * {
-    width: calc(100%/4 - 117px);
-    margin-left: 117px;
+    width: calc(100%/5 - 110px);
+    margin-left: 110px;
 }
 .footer_item-title {
     font-weight: 800;
@@ -1062,7 +1062,7 @@ footer {
     list-style: none;
 }
 .footer_item ul li {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 .footer_item ul li:last-child {
     margin-bottom: 0px;
@@ -1228,26 +1228,56 @@ footer .contact_callback-red {
     background: rgb(241, 240, 240);
     position: relative;
 }
-.modal .callback_right-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    color: var(--text_color);
-    margin-bottom: 10px;
+
+
+form input[type=checkbox] {
+    display: none;
 }
-.modal .callback_right-text {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-    color: #A2A1B2;
-    margin-bottom: 25px;
-}
-.modal .callback form label {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
+form input[type=checkbox]+label {
+    font-family: var();
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
     color: var(--text_color);
-    margin-bottom: 5px;
+    position: relative;
+    display: table-cell;
+    height: 20px;
+    padding-left: 30px;
+    cursor: pointer;
+    text-align: left;
+    vertical-align: middle;
+}
+form input[type=checkbox]+label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
+    width: 22px;
+    height: 22px;
+    content: '';
+    transition: .2s linear;
+    background: #F0F2FA;
+    border: 1px solid #DDE0EB;
+    border-radius: 3px;
+}
+form input[type=checkbox].error+label:before {
+    border-color: red;
+}
+form input[type=checkbox]+label:after {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    display: block;
+    width: 10px;
+    height: 6px;
+    content: '';
+    transition: opacity .2s linear;
+    transform: rotate(-45deg);
+    opacity: 0;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+}
+form input[type=checkbox]:checked+label:after {
+    opacity: 1;
 }
 

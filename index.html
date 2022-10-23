@@ -62,25 +62,25 @@
 							</a>
 							
 							<div class="item">
-								<a href="#description" class="scroll">Главная</a>
+								<a href="#" class="scroll">Главная</a>
 							</div>
 							<div class="item">
-								<a href="#realization" class="scroll">О нас</a>
+								<a href="#" class="scroll">О нас</a>
 							</div>
 							<div class="item">
-								<a href="#components" class="scroll">Релизы</a>
+								<a href="#" class="scroll">Релизы</a>
 							</div>
 							<div class="item">
-								<a href="#installation" class="scroll">Артисты</a>
+								<a href="#" class="scroll">Артисты</a>
 							</div>
 							<div class="item">
-								<a href="#installation" class="scroll">Услуги</a>
+								<a href="#" class="scroll">Услуги</a>
 							</div>
 							<div class="item">
-								<a href="#documents" class="scroll">Новости</a>
+								<a href="#" class="scroll">Новости</a>
 							</div>
 							<div class="item">
-								<a href="#clients" class="scroll">Контакты</a>
+								<a href="#" class="scroll">Контакты</a>
 							</div>
 							<div class="header_social header_social-mob">
 								<a href="#">
@@ -567,28 +567,77 @@
 
 
 		<section class="modal callback" id="callback_modal">
-			<div class="callback_right">
-				<div class="callback_right-title">Обратный звонок</div>
-				<div class="callback_right-text">Отправьте запрос на консультации по ПО</div>
-				<form>
-					<div class="line">
-						<div class="field">
-							<label for="name">Как вас зовут?</label>
-							<input id="name" type="text" placeholder="Ваше имя">
-						</div>
-					</div>
-					<div class="line">
-						<div class="field">
-							<label for="name">Номер телефона</label>
-							<input id="name" type="tel" placeholder="+7 (___) ___-__-__">
-						</div>
-					</div>
-					<button type="submit">
-						<span>Отправить запрос</span>
+			<div class="tabs_container">
+				<div class="tabs">
+					<button data-content="#tab6" data-level="level1" class="active">
+						Вход
 					</button>
-					<div class="form-politic">Я подтверждаю согласие на обработку моих персональных данных (закон №152-ФЗ «О персональных данных») и соглашаюсь с политикой конфиденциальности</div>
-				</form>
-			</div>	
+					<button data-content="#tab7" data-level="level1">
+						регистрация					
+					</button>					
+				</div>
+
+				<div class="tab_content level1 active" id="tab6">
+					<form>
+						<div class="line">
+							<div class="field">
+								<label for="email">E-mail</label>
+								<input id="email" type="text" placeholder="Введите адрес электронной почты...">
+							</div>							
+						</div>
+						<div class="line">
+							<div class="field">
+								<label for="password">
+									<span>Пароль</span>
+									<a href="#">Забыли пароль?</a>
+								</label>
+								<input id="password" type="password" placeholder="Введите пароль...">
+							</div>							
+						</div>
+						<button type="submit">Войти</button>
+					</form>
+				</div>
+
+				<div class="tab_content level1" id="tab7">
+					<form>
+						<div class="line">
+							<div class="field">
+								<label for="name2">Имя</label>
+								<input id="name2" type="text" placeholder="Введите имя...">
+							</div>							
+						</div>
+						<div class="line">
+							<div class="field">
+								<label for="email2">E-mail</label>
+								<input id="email2" type="text" placeholder="Введите адрес электронной почты...">
+							</div>							
+						</div>
+						<div class="line">
+							<div class="field">
+								<label for="password">Пароль</label>
+								<input id="password" type="password" placeholder="Введите пароль...">
+							</div>							
+						</div>
+						<div class="line">
+							<div class="field">
+								<label for="password">Подтвердите пароль</label>
+								<input id="password" type="password" placeholder="Введите пароль еще раз...">
+							</div>							
+						</div>
+						<div class="line agree">
+							<div class="field">
+								<input type="checkbox" name="agree" id="agree_check" checked="">
+								<label for="agree_check">Нажимая кнопку “Регистрация”, я подтверждаю согласие на обработку моих персональных данных (закон №152-ФЗ «О персональных данных») и соглашаюсь с <a href="#">политикой конфиденциальности</a></label>
+							</div>
+						</div>
+						<button type="submit">Регистрация</button>
+					</form>
+				</div>
+
+				
+			</div>
+
+
 		</section>
 
 
