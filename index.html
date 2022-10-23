@@ -74,6 +74,9 @@
 								<a href="#installation" class="scroll">Артисты</a>
 							</div>
 							<div class="item">
+								<a href="#installation" class="scroll">Услуги</a>
+							</div>
+							<div class="item">
 								<a href="#documents" class="scroll">Новости</a>
 							</div>
 							<div class="item">
@@ -324,7 +327,7 @@
 						<div class="advantages_items">
 							<div class="advantages_item">
 								<div class="advantages_item_title">Новаторство</div>
-								<div class="advantages_item_text">Мы ценим и раскрываем творческую индивидуальность каждого артиста лейбла</div>
+								<div class="advantages_item_text">Мы объединяем классический подход к созданию музыки с самыми современными технологиями</div>
 							</div>
 							<div class="advantages_item">
 								<div class="advantages_item_title">особый подход</div>
@@ -361,7 +364,72 @@
 
 				<section class="news">
 					<div class="cont">
-						<div class="news_title title">Новости</div>
+						<div class="news_head">							
+							<div class="news_title title">Новости</div>
+							<a href="#" class="news_link contact_callback">Все новости</a>						
+						</div>
+						<div class="news_top">
+							<a href="#" class="news_item">
+								<div class="news_item-title">Новости</div>
+								<div class="news_item-subtitle">Последние события и интересные факты</div>
+							</a>
+							<a href="#" class="news_item">
+								<div class="news_item-info">
+									<div class="news_item-title">Заголовок</div>
+									<div class="news_item-subtitle">Подзаголовок статьи</div>
+								</div>
+								<div class="news_item-img">
+									<img src="images/news1.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="news_bottom">
+							<div class="news_left">
+								<a href="#" class="news_item">
+									<div class="news_item-info">
+										<div class="news_item-title">Заголовок</div>
+										<div class="news_item-subtitle">Подзаголовок</div>
+										<div class="news_item-text">Краткий текст статьи</div>
+									</div>
+									<div class="news_item-img">
+										<img src="images/news2.jpg" alt="">
+									</div>
+								</a>
+								<a href="#" class="news_item">
+									<div class="news_item-info">
+										<div class="news_item-title">Заголовок</div>
+										<div class="news_item-subtitle">Подзаголовок</div>
+									</div>
+									<div class="news_item-img">
+										<img src="images/news3.jpg" alt="">
+									</div>
+								</a>
+								<a href="#" class="news_item">
+									<div class="news_item-info">
+										<div class="news_item-title">Заголовок</div>
+										<div class="news_item-subtitle">Подзаголовок</div>
+									</div>
+									<div class="news_item-img">
+										<img src="images/news4.jpg" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="news_right">
+								<a href="#" class="news_item">
+									<div class="news_item-info">
+										<div class="news_item-title">Новости</div>
+										<div class="news_item-subtitle">Последние события и интересные факты</div>
+									</div>
+									<div class="news_item-img">
+										<img src="images/news5.jpg" alt="">
+									</div>
+								</a>
+								<a href="#" class="news_item">
+									<span>Читать другие	новости</span>
+									<img src="images/arrow.svg" alt="">
+								</a>
+							</div>
+						</div>
 					</div>
 				</section>
 
@@ -370,34 +438,41 @@
 				<section class="callback" id="callback">
 					<div class="cont">
 						<div class="callback_wrap">
+							<form>
 								<div class="callback_title">Отправьте<br> демо-запись</div>
 								<div class="callback_text">и получите промо</div>
-								<form>
-									<div class="line">
-										<div class="field">
-											<label for="name">Как вас зовут?</label>
-											<input id="name" type="text" placeholder="Ваше имя">
+							
+								<div class="line">
+									<div class="field">
+										<label for="name">Как вас зовут?</label>
+										<input id="name" type="text" placeholder="Ваше имя">
+									</div>
+								</div>
+								<div class="line">
+									<div class="field">
+										<label for="name">Номер телефона</label>
+										<input id="name" type="tel" placeholder="+7 (___) ___-__-__">
+									</div>
+								</div>
+								<div class="line">
+									<div class="field">
+										<label for="name">Прикрепить файл</label>
+										<div class="upload-file__wrapper">
+											<input type="file" name="file" id="upload-file__input_1" class="upload-file__input" accept="" multiple onchange="handleFiles(this.files)">
+											<label class="upload-file__label" for="upload-file__input_1">													
+												<span class="upload-file__text">Выбрать</span>
+												<img src="images/file-icon.svg" alt="">
+											</label>
 										</div>
 									</div>
-									<div class="line">
-										<div class="field">
-											<label for="name">Номер телефона</label>
-											<input id="name" type="tel" placeholder="+7 (___) ___-__-__">
-										</div>
-									</div>
-									<div class="line">
-										<div class="field">
-											<label>Прикрепить файл</label>
-											<!-- <input id="name" type="tel" placeholder="+7 (___) ___-__-__"> -->
-										</div>
-									</div>
-									<button type="submit">
-										<span>Отправить</span>
-									</button>
-									<div class="form-politic">Я подтверждаю согласие на обработку моих персональных данных (закон №152-ФЗ «О персональных данных») и соглашаюсь с политикой конфиденциальности</div>
-								</form>
-							</div>
-						</div>
+								</div>
+								<button type="submit">
+									<span>Отправить</span>
+								</button>
+								<div class="form-politic">Я подтверждаю согласие на обработку моих персональных данных (закон №152-ФЗ «О персональных данных») и соглашаюсь с политикой конфиденциальности</div>
+							
+							</form>						
+						</div>	
 					</div>
 				</section>
 
@@ -409,7 +484,70 @@
 
 			<footer>
 				<div class="cont">
-					
+					<div class="footer_items">
+						<a href="#" class="footer_item">
+							<img src="images/footer_logo.svg" alt="">
+						</a>
+						<div class="footer_item">
+							<div class="footer_item-title">Дом гнесиных</div>
+							<ul>
+								<li><a href="#">О лейбле</a></li>
+								<li><a href="#">Релизы</a></li>
+								<li><a href="#">Артисты</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Презентация</a></li>
+							</ul>
+						</div>
+						<div class="footer_item">
+							<div class="footer_item-title">Услуги</div>
+							<ul>
+								<li><a href="#">Маркетинг и SMM</a></li>
+								<li><a href="#">PR и работа со СМИ</a></li>
+								<li><a href="#">Дистрибуция</a></li>
+								<li><a href="#">Юридические вопросы</a></li>
+								<li><a href="#">Сбор вознагрождений</a></li>
+								<li><a href="#">Синхронизация</a></li>
+								<li><a href="#">Промо на витринах</a></li>
+							</ul>
+						</div>
+						<div class="footer_item">
+							<div class="footer_item-title">Кабинет артиста</div>
+							<ul>
+								<li><a href="#">Войти</a></li>
+								<li><a href="#">Регистрация</a></li>
+								<li><a href="#">Сбросить пароль</a></li>
+							</ul>
+						</div>
+						<div class="footer_item">
+							<div class="footer_item-title">Присоединяйтесь</div>
+							<div class="footer_social">
+								<a href="#">
+									<img src="images/ok.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="images/vk.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="images/ok2.svg" alt="">
+								</a>
+							</div>
+							<a href="mailto:privet@domgnes.ru" class="footer_item-email">privet@domgnes.ru</a>
+							<a href="#" class="contact_callback modal_link contact_callback-red" data-content="#callback_modal">
+								<span>Отправить демо</span>
+							</a>
+						</div>
+					</div>
+					<div class="footer_bottom">
+						<div class="footer_left">
+							<div class="footer_copyright">© Дом Гнесиных 1895-2022</div>
+							<a href="#" class="footer_politic">Политика конфиденциальности</a>
+						</div>
+						<div class="footer_right">
+							<a href="#" class="site-map">Карта сайта</a>
+						</div>
+					</div>
 				</div>
 			</footer>
 

@@ -23,6 +23,13 @@ $(() => {
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
 
 
+	// Выбор файла
+	$('body').on('change', '.form input[type=file]', function () {
+		let label = $(this).closest('.file').find('label')
+
+		label.addClass('active')
+		label.find('span').text($(this).val())
+	})
 
 	// Скрол к пунктам меню
 	$(".scroll").on("click", function(e){
@@ -171,4 +178,11 @@ const widthScroll = () => {
 	document.body.removeChild(div)
 
 	return scrollWidth
+}
+
+
+
+function handleFiles(file) {
+    const fileList = file;
+    $(".upload-file__text").text(fileList[0]["name"]);
 }
