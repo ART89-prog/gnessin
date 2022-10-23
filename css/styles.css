@@ -109,7 +109,7 @@ input[type=number] {
     --text_color: #2C3036;
     --text_color2: #56595D;
     --font_size: 16px;
-    --font_size_title: 40px;
+    --font_size_title: 48px;
     --font_family: 'Mulish', sans-serif;
 }
 
@@ -337,19 +337,19 @@ header .cont {
     border: 2px solid transparent;
 }
 .contact_callback:hover {
-    background: #55002B;
+    background: var(--bg2);
     color: #fff;
 }
 .contact_callback-red {
-    background: #55002B;
+    background: var(--bg2);
     color: #FFFFFF;
     margin-left: 16px;
     border: 2px solid transparent;
 }
 .contact_callback-red:hover {
     background: #fff;
-    color: #55002B;
-    border: 2px solid #55002B;
+    color: var(--bg2);
+    border: 2px solid var(--bg2);
 }
 .header_social {
     display: flex;
@@ -520,7 +520,7 @@ header .logo-mob {
     transition: all .4s;
 }
 .first-section a:hover {
-    background: #55002B;
+    background: var(--bg2);
     color: #fff;
 }
 
@@ -547,10 +547,10 @@ header .logo-mob {
 }
 .title {
     font-weight: 900;
-    font-size: 48px;
+    font-size: var(--font_size_title);
     line-height: 48px;
     text-transform: uppercase;
-    color: #55002B;
+    color: var(--bg2);
     margin-right: 28px;
 }
 .slider-arrows {
@@ -571,7 +571,7 @@ header .logo-mob {
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #2C3036;
+    color: var(--text_color);
     margin-bottom: 7px;
 }
 .releases_item-text {
@@ -665,12 +665,12 @@ header .logo-mob {
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #2C3036;
+    color: var(--text_color);
     margin-bottom: 8px;
 }
 .artists_item-text {
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     color: #56595D;
 }
@@ -699,12 +699,12 @@ header .logo-mob {
     font-size: 28px;
     line-height: 32px;
     text-transform: uppercase;
-    color: #2C3036;
+    color: var(--text_color);
     margin-bottom: 16px;
 }
 .advantages_item_text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 20px;
     color: #56595D;
 }
@@ -739,7 +739,7 @@ header .logo-mob {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    color: #2C3036;
+    color: var(--text_color);
     margin-bottom: 48px;
 }
 .quote_info-name {
@@ -747,7 +747,7 @@ header .logo-mob {
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #55002B;
+    color: var(--bg2);
     position: relative;
 }
 .quote_info-name::before {
@@ -812,7 +812,7 @@ header .logo-mob {
     object-fit: cover;
 }
 .news_top .news_item:nth-child(1) {
-    background: #55002B;
+    background: var(--bg2);
     padding: 40px;
 }
 .news_item-title {
@@ -825,7 +825,7 @@ header .logo-mob {
 .news_item-subtitle,
 .news_item-text {
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 20px;
     color: #FFFFFF;
 }
@@ -888,7 +888,7 @@ header .logo-mob {
 }
 .news_left .news_item:nth-child(2) .news_item-info {
     padding: 40px;
-    background: #55002B;
+    background: var(--bg2);
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
 }
@@ -902,7 +902,7 @@ header .logo-mob {
     display: flex;
 }
 .news_left .news_item:nth-child(3) .news_item-info {
-    background: #55002B;
+    background: var(--bg2);
     border-bottom-left-radius: 12px;
     border-top-left-radius: 12px;
     width: 260px;
@@ -923,7 +923,7 @@ header .logo-mob {
     padding: 40px;
 }
 .news_right .news_item:nth-child(1) .news_item-title {
-    color: #55002B;
+    color: var(--bg2);
 }
 .news_right .news_item:nth-child(1) .news_item-subtitle {
     color: #56595D;
@@ -935,7 +935,7 @@ header .logo-mob {
 
 .news_right .news_item:nth-child(2) {
     border-radius: 12px;
-    background: #55002B;
+    background: var(--bg2);
     padding: 40px;
     font-weight: 700;
     font-size: 32px;
@@ -979,11 +979,11 @@ form {
 }
 .callback_title {
     font-weight: 900;
-    font-size: 48px;
+    font-size: var(--font_size_title);
     line-height: 48px;
     text-align: center;
     text-transform: uppercase;
-    color: #55002B;
+    color: var(--bg2);
     margin-bottom: 12px;
 }
 .callback_text {
@@ -1006,7 +1006,7 @@ form .line .field label {
     font-weight: 800;
     font-size: 20px;
     line-height: 32px;
-    color: #2C3036;   
+    color: var(--text_color);
     margin-bottom: 8px;
 }
 form .line .field input {
@@ -1018,14 +1018,14 @@ form .line .field input {
     padding: 0 16px;
     font-family: var(--font_family);
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     color: #56595D; 
 }
 form button {
     width: 100%;
     height: 60px;
-    background: #55002B;
+    background: var(--bg2);
     border-radius: 8px; 
     font-weight: 800;
     font-size: 20px;
@@ -1035,9 +1035,9 @@ form button {
     transition: all .3s;
 }
 form button:hover {
-    color: #55002B;
+    color: var(--bg2);
     background: #fff;
-    border: 1px solid #55002B;
+    border: 1px solid var(--bg2);
 }
 .form-politic {
     font-weight: 400;
@@ -1073,7 +1073,7 @@ form button:hover {
 .upload-file__text {
     font-family: var(--font_family);
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 48px;
     color: #56595D;
     margin-right: 4px;
@@ -1104,10 +1104,10 @@ footer {
 }
 .footer_item-title {
     font-weight: 800;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     text-transform: uppercase;
-    color: #2C3036;
+    color: var(--text_color);
     margin-bottom: 20px;
 }
 .footer_item ul {
@@ -1122,7 +1122,7 @@ footer {
 .footer_item ul li a {
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     color: #56595D;
 }
@@ -1143,7 +1143,7 @@ footer {
 .footer_item-email {
     text-decoration: none;
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     color: #3D001B;   
     margin-bottom: 40px;
@@ -1249,7 +1249,7 @@ footer .contact_callback-red {
     flex-wrap: wrap;
     padding: 14px 34px 14px 39px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 22px;
     text-transform: uppercase;
     color: #505050;
@@ -1257,7 +1257,7 @@ footer .contact_callback-red {
 }
 .tabs button.active {
     background: #fff;
-    color: #55002B;
+    color: var(--bg2);
     padding: 14px 34px 14px 39px;
 }
 .tabs button + button {
@@ -1306,7 +1306,7 @@ footer .contact_callback-red {
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
-    color: #55002B;
+    color: var(--bg2);
     margin-bottom: 9px;
 }
 .modal form .line {
@@ -1315,6 +1315,7 @@ footer .contact_callback-red {
 .modal form button {
     width: 100%;
     height: 40px;
+    font-weight: 600;
 }
 .modal form .line .field label a {
     font-weight: 600;
@@ -1388,14 +1389,17 @@ footer .contact_callback-red {
     font-weight: 400;
     font-size: 11px;
     line-height: 18px;
-    color: #55002B;
+    color: var(--bg2);
     display: inline-block;
 }
 .modal form .agree .field label a {
-    color: #55002B;
+    color: var(--bg2);
     font-weight: 400;
     font-size: 11px;
     line-height: 18px;
+}
+.callback.modal {
+    background: #fff;
 }
 
 .fancybox__content>.carousel__button.is-close {

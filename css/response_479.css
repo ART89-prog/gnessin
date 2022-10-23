@@ -1,5 +1,48 @@
 @media (max-width: 479px) {
 
-  
+    :root {
+        --font_size_title: 26px;
+    }
+    .advantages_title {
+        margin-bottom: 20px;
+    }
+    .first-section_title {
+        font-size: 32px;
+    }
+    .footer_item-title {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .footer_item ul li a {
+        font-size: 13px;
+    }
+    .footer_item ul li {
+        margin-bottom: 7px;
+    }
+    .footer_social {
+        margin-bottom: 10px;
+    }
+    .footer_item-email {
+        margin-bottom: 25px;
+    }
+    footer .contact_callback {
+        font-size: 13px;
+    }
+    footer {
+        padding: 30px 0 20px;
+    }
+    .quote_info-text {
+        font-size: 18px;
+        margin-bottom: 21px;
+    }
+    .quote_info-name {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+
+
+
+
    
 }

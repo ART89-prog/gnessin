@@ -1,8 +1,8 @@
 @media print, (max-width: 767px) {
 
     :root {
-        --font_size: 16px;
-        --font_size_title: 20px;
+        --font_size: 15px;
+        --font_size_title: 28px;
     }
  
     .advantages_items {
@@ -31,6 +31,77 @@
     .callback {
         background: #F2EEE9;
     }
+
+    .quote .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .quote_photo {
+        position: relative;
+    }
+    .quote_info {
+        max-width: 100%;
+    }
+    .quote_info-name::before {
+        right: 0;
+        top: 22px;
+        width: 154px;
+        height: 104px;
+    }
+    .advantages_title {
+        margin-bottom: 30px;
+    }
+    .first-section_title {
+        font-size: 34px;
+        margin-bottom: 12px;
+    }
+    .first-section_text {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 30px;
+    }
+    .first-section {
+        padding: 50px 0 50px;
+    }
+    .footer_items {
+        margin-bottom: 5px;
+    }
+    footer {
+        padding: 40px 0 20px;
+    }
+    .releases_top,
+    .artists_top {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .releases_left,
+    .artists_left {
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .artists .cont:before {
+        height: 79px;
+        left: 0;
+        bottom: -90px;
+        background-size: cover;
+    }
+    .artists {
+        padding: 40px 0 40px;
+    }
+    .artists {
+        margin-bottom: 90px;
+    }
+    .upload-file__label {
+        width: 100%;
+    }
+    .advantages_item_title {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 6px;
+    }
+
    
 
 
