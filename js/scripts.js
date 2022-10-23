@@ -32,22 +32,22 @@ $(() => {
         nextArrow: "<img src='images/arrow-next.svg'>",
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1023,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 3,
+                slidesToScroll: 1,
                 infinite: true,
               }
             },
             {
-              breakpoint: 875,
+              breakpoint: 767,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 479,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -68,10 +68,18 @@ $(() => {
         nextArrow: "<img src='images/arrow-next.svg'>",
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1187,
+              settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                infinite: true,
+              }
+            },
+            {
+              breakpoint: 1023,
               settings: {
                 slidesToShow: 4,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
               }
             },
@@ -79,6 +87,13 @@ $(() => {
               breakpoint: 875,
               settings: {
                 slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2,
                 slidesToScroll: 1
               }
             },

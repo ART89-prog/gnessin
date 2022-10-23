@@ -5,6 +5,33 @@
         --font_size_title: 20px;
     }
  
+    .advantages_items {
+        margin-left: 0px;
+        margin-bottom: 0px;
+
+    }
+    .advantages_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .footer_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .footer_left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer_copyright {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .callback {
+        background: #F2EEE9;
+    }
+   
 
 
 

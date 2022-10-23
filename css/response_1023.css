@@ -4,7 +4,45 @@
         --font_size: 17px;
         --font_size_title: 24px;
     }
-  
+
+    .news_top {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .news_top > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .news_top .news_item:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    .news_top .news_item:nth-child(2) .news_item-img img {
+        width: 100%;
+    }
+    .news_bottom {
+        flex-direction: column;
+    }
+    .news_left .news_item:nth-child(3) {
+        flex-direction: column;
+    }
+
+    .footer_items > * {
+        width: calc(100%/4 - 20px);
+        margin-left: 20px;
+    }
+    .footer_items {
+        margin-left: -20px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .footer_wrap {
+        flex-direction: column;
+    }
+    .footer_logo {
+        margin: 0 auto 30px;
+    }
+
 
 
     

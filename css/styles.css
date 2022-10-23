@@ -414,8 +414,8 @@ header .mob_menu_btn .icon {
 header .close_btn {
     color: #000;    
     position: absolute;
-    top: 25px;
-    left: 305px;
+    top: 24px;
+    left: 22px;
     display: none;
     width: 20px;
     height: 20px;
@@ -471,9 +471,6 @@ header .menu .item.current-menu-item>a {
 header .logo-mob {
     display: none;
 }
-
-
-
 
 
 
@@ -560,8 +557,8 @@ header .logo-mob {
     display: flex;
 }
 .releases_item-img {
-    width: 300px;
-    height: 300px; 
+    width: 100%;
+    height: auto;
     margin-bottom: 16px;   
 }
 .releases_item-img img {
@@ -654,8 +651,8 @@ header .logo-mob {
     background: url(../images/line.svg);
 }
 .artists_item-img {
-    width: 184px;
-    height: 184px;
+    width: 100%;
+    height: auto;
     margin-bottom: 24px;
 }
 .artists_item-img img {
@@ -766,9 +763,13 @@ header .logo-mob {
     position: absolute;
     right: 19px;
     bottom: -106px;
+    width: 469px;
+    height: 440px;
 }
 .quote_photo img {
     display: block;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -1022,7 +1023,7 @@ form .line .field input {
     color: #56595D; 
 }
 form button {
-    width: 512px;
+    width: 100%;
     height: 60px;
     background: #55002B;
     border-radius: 8px; 
@@ -1084,15 +1085,22 @@ footer {
     padding: 77px 0 20px;
     background: #F2EEE9;
 }
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_logo {
+    margin-right: 117px;
+}
 .footer_items {
     display: flex;
     justify-content: space-between;
-    margin-left: -110px;
+    margin-left: -50px;
     margin-bottom: 92px;
 }
 .footer_items > * {
-    width: calc(100%/5 - 110px);
-    margin-left: 110px;
+    width: calc(100%/4 - 50px);
+    margin-left: 50px;
 }
 .footer_item-title {
     font-weight: 800;
