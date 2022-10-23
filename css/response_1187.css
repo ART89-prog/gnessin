@@ -2,7 +2,8 @@
 
     header .mob_menu_btn {
         display: flex;
-        order: 1;
+        order: 0;
+        margin-left: 0;
     }
     header .menu {
         position: fixed;
@@ -100,9 +101,7 @@
         display: block;
         margin-top: 20px;
     }
-    .header_modal {
-        display: none;
-    }
+
     .header_modal-mob {
         display: flex;
         flex-direction: column;
@@ -113,9 +112,27 @@
     .header_modal-mob .contact_callback {
         width: 100%;
     }
+    .header_modal .contact_callback-red {
+        display: none;
+    } 
     .header_modal-mob .contact_callback-red {
         margin-left: 0px;
         margin-top: 10px;
+    }
+    header .logo {
+        justify-content: center;
+        order: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header_modal .contact_callback {
+        order: 1;
+    }
+    .header_left {
+        margin-left: 0;
+    }
+    .header_modal {
+        margin-left: 0px;
     }
  
 

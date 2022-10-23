@@ -328,11 +328,13 @@ header .cont {
     font-size: 16px;
     line-height: 16px;
     color: #3D001B;
-    padding: 10px 20px 14px;
+    padding: 8px 20px 8px;
     background: #F2EEE9;
     border-radius: 100px;
     transition: all .4s ease;
     text-align: center;
+    height: 36px;
+    border: 2px solid transparent;
 }
 .contact_callback:hover {
     background: #55002B;
@@ -342,6 +344,16 @@ header .cont {
     background: #55002B;
     color: #FFFFFF;
     margin-left: 16px;
+    border: 2px solid transparent;
+}
+.contact_callback-red:hover {
+    background: #fff;
+    color: #55002B;
+    border: 2px solid #55002B;
+}
+.header_social {
+    display: flex;
+    flex-wrap: nowrap;
 }
 .header_modal-mob {
     display: none;
@@ -352,6 +364,14 @@ header .cont {
 .header_social a {
     text-decoration: none;
     margin-left: 4px;
+    width: 36px;
+    height: 36px;
+    top: 0;
+    transition: .3s;
+}
+.header_social a:hover {
+    top: -3px;
+    position: relative;
 }
 header .cont {
     position: relative;
@@ -392,17 +412,13 @@ header .mob_menu_btn .icon {
 }
 
 header .close_btn {
-    color: #000;
-    
+    color: #000;    
     position: absolute;
-    top: 18px;
-    right: 23px;
-
+    top: 25px;
+    left: 305px;
     display: none;
-
     width: 20px;
     height: 20px;
-
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -517,6 +533,11 @@ header .logo-mob {
 .releases {
     padding: 64px 0 60px;
 }
+.releases .contact_callback {
+    height: 44px;
+    line-height: 40px;
+    padding: 0 20px;
+}
 .releases_top {
     display: flex;
     align-items: center;
@@ -533,7 +554,7 @@ header .logo-mob {
     line-height: 48px;
     text-transform: uppercase;
     color: #55002B;
-    margin-right: 11px;
+    margin-right: 28px;
 }
 .slider-arrows {
     display: flex;
@@ -598,6 +619,11 @@ header .logo-mob {
 .artists {
     padding: 80px 0 80px;
     background: linear-gradient(180deg, rgba(242, 238, 233, 0) 0%, #F2EEE9 100%);
+}
+.artists .contact_callback {
+    height: 44px;
+    line-height: 40px;
+    padding: 0 20px;
 }
 .artists_top {
     display: flex;
@@ -754,6 +780,11 @@ header .logo-mob {
 .news {
     margin-bottom: 102px;
 }
+.news .contact_callback {
+    height: 44px;
+    line-height: 40px;
+    padding: 0 20px;
+}
 .news_head {
     display: flex;
     align-items: center;
@@ -772,6 +803,8 @@ header .logo-mob {
 .news_item {
     border-radius: 12px;
     text-decoration: none;
+    transition: all .3s;
+    overflow: hidden;
 }
 .news_item img {
     display: block;
@@ -812,6 +845,12 @@ header .logo-mob {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+.news_item:hover img {
+    transform: scale(1.1);    
+}
+.news_right .news_item:nth-child(2):hover img {
+    transform: translateX(15px);
+}
 
 
 .news_bottom {
@@ -828,7 +867,6 @@ header .logo-mob {
     width: 100%;
     display: flex;
     margin-bottom: 48px;
-
 }
 .news_left .news_item:nth-child(1) .news_item-info {
     width: calc(100% - 380px);
@@ -858,8 +896,8 @@ header .logo-mob {
     border-bottom-left-radius: 12px;
 }
 .news_left .news_item:nth-child(3) {
-    max-width: 532px;
-    width: 100%;
+    width: calc(100% - 348px);
+    max-width: 100%;
     display: flex;
 }
 .news_left .news_item:nth-child(3) .news_item-info {
@@ -993,6 +1031,12 @@ form button {
     line-height: 32px;
     color: #FFFFFF; 
     margin-top: 6px;
+    transition: all .3s;
+}
+form button:hover {
+    color: #55002B;
+    background: #fff;
+    border: 1px solid #55002B;
 }
 .form-politic {
     font-weight: 400;
@@ -1074,11 +1118,19 @@ footer {
     line-height: 16px;
     color: #56595D;
 }
+.footer_item ul li a:hover {
+    color: #252628;
+}
 .footer_social {
     margin-bottom: 28px;
 }
 .footer_social a {
     text-decoration: none;
+    transition: .3s;
+}
+.footer_social a:hover {
+    top: -3px;
+    position: relative;
 }
 .footer_item-email {
     text-decoration: none;
@@ -1088,6 +1140,10 @@ footer {
     color: #3D001B;   
     margin-bottom: 40px;
     display: block;
+    transition: all .3s;
+}
+.footer_item-email:hover {
+    text-decoration: underline;
 }
 footer .contact_callback-red {
     white-space: nowrap;
@@ -1170,7 +1226,6 @@ footer .contact_callback-red {
     align-items: stretch;
     align-content: stretch;
     flex-wrap: nowrap;
-    overflow: auto;
     background: #F7F7F7;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -1190,6 +1245,7 @@ footer .contact_callback-red {
     line-height: 22px;
     text-transform: uppercase;
     color: #505050;
+    border-radius: 10px;
 }
 .tabs button.active {
     background: #fff;
@@ -1219,15 +1275,14 @@ footer .contact_callback-red {
 
 
 
-.modal {
+.modal  {
     display: block;
     display: none;
     visibility: visible !important;
-    max-width: 450px;
+    max-width: 450px !important;
     width: 100%;
     max-width: 100%;
-    padding-top: 0;
-    padding-bottom: 55px;
+    padding: 0 0 55px;
     background: #FFFFFF;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
@@ -1335,3 +1390,10 @@ footer .contact_callback-red {
     line-height: 18px;
 }
 
+.fancybox__content>.carousel__button.is-close {
+    top: 8px;
+    right: 12px;  
+}
+.carousel__button svg {
+    stroke: #1A1A18;
+}
