@@ -1165,12 +1165,15 @@ footer .contact_callback-red {
 
 .tabs {
     display: flex;
-    margin-bottom: 44px;
-    justify-content: space-between;
+    margin-bottom: 34px;
+    justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
     flex-wrap: nowrap;
     overflow: auto;
+    background: #F7F7F7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .tabs button {
     position: relative;
@@ -1181,22 +1184,22 @@ footer .contact_callback-red {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    padding: 14px 34px 14px 39px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #505050;
+}
+.tabs button.active {
+    background: #fff;
+    color: #55002B;
+    padding: 14px 34px 14px 39px;
 }
 .tabs button + button {
     margin-left: 2px;
 }
-.tabs button:hover .requirements_item-img-hov {
-    display: block;
-}
-.tabs button:hover .requirements_item-img {
-    display: none;
-}
-.tabs button.active .requirements_item-img-hov {
-    display: block;
-}
-.tabs button.active .requirements_item-img {
-    display: none;
-}
+
 .tab_content {
     position: relative;
     visibility: hidden;
@@ -1220,34 +1223,68 @@ footer .contact_callback-red {
     display: block;
     display: none;
     visibility: visible !important;
-    max-width: 480px;
+    max-width: 450px;
     width: 100%;
-    border-radius: 15px;
     max-width: 100%;
-    padding: 45px 30px 30px;
-    background: rgb(241, 240, 240);
+    padding-top: 0;
+    padding-bottom: 55px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
     position: relative;
 }
+.modal form {
+    padding: 0px 40px;
+}
+.modal form .line .field label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #55002B;
+    margin-bottom: 9px;
+}
+.modal form .line {
+    margin-bottom: 14px;
+}
+.modal form button {
+    width: 100%;
+    height: 40px;
+}
+.modal form .line .field label a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+}
+.modal form .line .field input {
+    background: #F7F7F7;
+    border-radius: 5px;
+    height: 40px;  
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8E8E8E;  
+}
 
-
-form input[type=checkbox] {
+.modal form input[type=checkbox] {
     display: none;
 }
-form input[type=checkbox]+label {
-    font-family: var();
+.modal form input[type=checkbox]+label {
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     color: var(--text_color);
     position: relative;
     display: table-cell;
-    height: 20px;
     padding-left: 30px;
     cursor: pointer;
     text-align: left;
     vertical-align: middle;
 }
-form input[type=checkbox]+label:before {
+.modal form input[type=checkbox]+label:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -1256,14 +1293,14 @@ form input[type=checkbox]+label:before {
     height: 22px;
     content: '';
     transition: .2s linear;
-    background: #F0F2FA;
-    border: 1px solid #DDE0EB;
-    border-radius: 3px;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
 }
-form input[type=checkbox].error+label:before {
+.modal form input[type=checkbox].error+label:before {
     border-color: red;
 }
-form input[type=checkbox]+label:after {
+.modal form input[type=checkbox]+label:after {
     position: absolute;
     top: 7px;
     left: 5px;
@@ -1277,7 +1314,24 @@ form input[type=checkbox]+label:after {
     border-bottom: 2px solid #000;
     border-left: 2px solid #000;
 }
-form input[type=checkbox]:checked+label:after {
+.modal form input[type=checkbox]:checked+label:after {
     opacity: 1;
+}
+.modal form .agree {
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+.modal form .agree .field label {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #55002B;
+    display: inline-block;
+}
+.modal form .agree .field label a {
+    color: #55002B;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
 }
 

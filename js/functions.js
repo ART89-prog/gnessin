@@ -2,6 +2,7 @@ $(() => {
 	// Есть ли поддержка тач событий или это apple устройство
 	if (!is_touch_device() || !/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) $('html').addClass('custom_scroll')
 
+	WW = $(window).width()	
 
 	// Ленивая загрузка
 	setTimeout(() => {
@@ -23,13 +24,6 @@ $(() => {
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
 
 
-	// Выбор файла
-	$('body').on('change', '.form input[type=file]', function () {
-		let label = $(this).closest('.file').find('label')
-
-		label.addClass('active')
-		label.find('span').text($(this).val())
-	})
 
 	// Скрол к пунктам меню
 	$(".scroll").on("click", function(e){
@@ -101,9 +95,11 @@ $(() => {
 		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
 	}
 
-	Fancybox
+	// Fancybox
 	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.trapFocus = false
 	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.placeFocusBack = false
 	Fancybox.defaults.l10n = {
 		CLOSE: "Закрыть",
 		NEXT: "Следующий",
@@ -111,15 +107,22 @@ $(() => {
 		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
 	}
 
+	Fancybox.defaults.template = {
+		closeButton: '<svg><use xlink:href="http://localhost/2022/cluster/wp-content/themes/raten_cluster/images/sprite.svg#ic_close2"></use></svg>',
+		spinner: '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="25 25 50 50" tabindex="-1"><circle cx="50" cy="50" r="20"/></svg>',
+		main: null
+	}
+
 
 	// Моб. версия
-	fiestResize = false
+	firstResize = false
 
-	if ($(window).width() < 360) {
-		$('meta[name=viewport]').attr('content', 'width=360, user-scalable=no')
+	if (document.body.clientWidth < 360) {
+		document.getElementsByTagName('meta')['viewport'].content = 'width=360, user-scalable=no'
 
-		fiestResize = true
+		firstResize = true
 	}
+
 
 
 	if (is_touch_device()) {
@@ -146,15 +149,20 @@ $(() => {
 
 
 
-$(window).resize(() => {
-	// Моб. версия
-	if (!fiestResize) {
-		$('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1, maximum-scale=1')
-		if ($(window).width() < 360) $('meta[name=viewport]').attr('content', 'width=360, user-scalable=no')
+$(window).on('resize', () => {
+	if (typeof WW !== 'undefined' && WW != $(window).width()) {
+		// Моб. версия
+		if (!firstResize) {
+			$('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1, maximum-scale=1')
+			if ($(window).width() < 320) $('meta[name=viewport]').attr('content', 'width=320, user-scalable=no')
 
-		fiestResize = true
-	} else {
-		fiestResize = false
+			firstResize = true
+		} else {
+			firstResize = false
+		}
+		
+		// Перезапись ширины окна
+		WW = $(window).width()
 	}
 })
 

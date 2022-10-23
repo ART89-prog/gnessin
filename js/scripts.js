@@ -94,17 +94,18 @@ $(() => {
 
 
 
-	$('body').on('click', '.modal_link', function (e) {
-	    e.preventDefault()
+      $('body').on('click', '.modal_link', function (e) {
+        e.preventDefault()
+  
+        Fancybox.close(true)
+          Fancybox.show([{
+              src: $(this).data('content'),
+              type: 'inline',
+          }]);
+    })
 
-	    $.fancybox.close(true)
 
-	    $.fancybox.open({
-	        src: $(this).data('content'),
-	        type: 'inline',
-	        touch: false
-	    })
-	})
+    
 
 
     $(document).on('change', '.error', function () {
