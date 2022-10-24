@@ -107,11 +107,11 @@ $(() => {
 		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
 	}
 
-	// Fancybox.defaults.template = {
-	// 	closeButton: '<svg><use xlink:href="http://localhost/2022/cluster/wp-content/themes/raten_cluster/images/sprite.svg#ic_close2"></use></svg>',
-	// 	spinner: '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="25 25 50 50" tabindex="-1"><circle cx="50" cy="50" r="20"/></svg>',
-	// 	main: null
-	// }
+	Fancybox.defaults.template = {
+		closeButton: "<img src='images/close.svg'>",
+		spinner: '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="25 25 50 50" tabindex="-1"><circle cx="50" cy="50" r="20"/></svg>',
+		main: null
+	}
 
 
 	// Моб. версия

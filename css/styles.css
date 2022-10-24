@@ -1441,7 +1441,7 @@ footer .contact_callback-red {
     top: 8px;
     right: 12px;  
 }
-.carousel__button svg {
-    stroke: #1A1A18;
+.fancybox__content>.carousel__button.is-close img {
+    width: 14px;
+    height: 14px;
 }
-
