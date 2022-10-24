@@ -2,14 +2,14 @@
 
     header .mob_menu_btn {
         display: flex;
-        order: 0;
+        order: 24;
         margin-left: 0;
         position: relative;
     }
     header .menu {
         position: fixed;
         z-index: 107;
-        top: 88px;
+        top: 0px;
         left: 0;
 
         display: flex;
@@ -125,7 +125,7 @@
     }
     header .logo {
         justify-content: center;
-        order: 0;
+        order: 1;
         margin-left: auto;
         margin-right: auto;
     }
