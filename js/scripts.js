@@ -23,6 +23,7 @@ $(() => {
 
     $('.releases_items').slick({
         infinite: true,
+        lazyLoad: 'ondemand',
         dots: false,
         arrows: true,
         slidesToShow: 4,
@@ -59,6 +60,7 @@ $(() => {
 
       $('.artists_items').slick({
         infinite: true,
+        lazyLoad: 'ondemand',
         dots: false,
         arrows: true,
         slidesToShow: 6,

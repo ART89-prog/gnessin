@@ -557,8 +557,10 @@ header .logo-mob {
     display: flex;
 }
 .releases_item-img {
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
+    width: 100%;
+    height: auto;
     margin-bottom: 16px;   
 }
 .releases_item-img img {
@@ -852,7 +854,8 @@ header .logo-mob {
     border-bottom-right-radius: 12px;
 }
 .news_item:hover img {
-    transform: scale(1.1);    
+    transform: scale(1.1); 
+    transition: all 0.3s;     
 }
 .news_right {
     width: 416px;
@@ -962,6 +965,7 @@ header .logo-mob {
     margin-bottom: 7px;
     width: 160px;
     height: 26px;
+    transition: all .4s;
 }
 
 
@@ -1152,6 +1156,7 @@ footer {
     text-decoration: none;
     transition: all .3s;
     position: relative;
+    top: 0;
 }
 .footer_social a:hover {
     top: -3px;    
@@ -1426,3 +1431,4 @@ footer .contact_callback-red {
 .carousel__button svg {
     stroke: #1A1A18;
 }
+
