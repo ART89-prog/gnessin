@@ -192,6 +192,7 @@
     .news_right .news_item:nth-child(2) {
         padding-top: 65px;
         padding-bottom: 65px;
+        height: 289px;
     }
     .news_left .news_item:nth-child(3) .news_item-img img {
         border-bottom-right-radius: 12px;
@@ -238,6 +239,20 @@
     }
     .footer_logo {
         margin-right: 30px;
+    }
+
+    .artists,
+    .releases {
+        padding: 60px 0 60px;
+    }
+    .advantages, 
+    .quote, 
+    .callback,
+    .news {
+        margin-bottom: 80px;
+    }
+    .callback_wrap {
+        padding: 70px 0 70px;
     }
     
 

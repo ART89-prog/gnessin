@@ -1268,7 +1268,7 @@ footer .contact_callback-red {
     line-height: 22px;
     text-transform: uppercase;
     color: #505050;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 0px;
 }
 .tabs button.active {
     background: #fff;

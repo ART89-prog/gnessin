@@ -79,9 +79,6 @@
         font-size: 18px;
         line-height: 22px;
     }
-    .advantages_title {
-        margin-bottom: 40px;
-    }
     .advantages_item_title {
         font-size: 23px;
         line-height: 28px;
@@ -113,10 +110,6 @@
         width: 100%;
         display: flex;
     }
-    .news_right .news_item:nth-child(2) {
-        margin-top: 0;
-        width: calc(50% - 13px);
-    }
     .news_right .news_item:nth-child(1) {
         margin-bottom: 0;
         width: calc(50% - 13px);
@@ -126,10 +119,31 @@
         display: flex;
         justify-content: center;
         font-size: 50px;
-        line-height: 1.2;
+        line-height: 1.2;        
+        margin-top: 0;
+        width: calc(50% - 13px);
+        height: auto;
     }
     .news_top .news_item:nth-child(1) {
         padding-bottom: 100px;
+    }
+    .artists, 
+    .releases {
+        padding: 40px 0 40px;
+    }
+    .releases_top,
+    .news_head,
+    .advantages_title {
+        margin-bottom: 40px;
+    }
+    .callback_wrap {
+        padding: 60px 0 60px;
+    }
+    .artists .cont:before {
+        bottom: -120px;
+    }
+    .artists {
+        margin-bottom: 120px;
     }
 
 
