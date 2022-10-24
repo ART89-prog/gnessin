@@ -541,6 +541,10 @@ header .logo-mob {
     justify-content: space-between;
     margin-bottom: 48px;
 }
+.releases_link-mob,
+.artists_link-mob {
+    display: none;
+}
 .releases_left {
     display: flex;
     align-items: center;
@@ -849,7 +853,7 @@ header .logo-mob {
 .news_top .news_item:nth-child(2) .news_item-img {
     width: 50%;
 }
-.news_top .news_item:nth-child(2) .news_item-img img {
+.news_top .news_item:nth-child(2) .news_item-img {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
@@ -882,13 +886,13 @@ header .logo-mob {
     margin-bottom: 48px;
 }
 .news_left .news_item:nth-child(1) .news_item-info {
-    width: calc(100% - 380px);
+    width: calc(100% - 374px);
     background: #6F8EB9;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     padding: 40px;
 }
-.news_left .news_item:nth-child(1) .news_item-img img {
+.news_left .news_item:nth-child(1) .news_item-img {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
@@ -904,7 +908,7 @@ header .logo-mob {
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
 }
-.news_left .news_item:nth-child(2) .news_item-img img {
+.news_left .news_item:nth-child(2) .news_item-img {
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
 }
@@ -920,7 +924,7 @@ header .logo-mob {
     width: 260px;
     padding: 40px;
 }
-.news_left .news_item:nth-child(3) .news_item-img img {
+.news_left .news_item:nth-child(3) .news_item-img {
     border-bottom-right-radius: 12px;
     border-top-right-radius: 12px;
 }
@@ -942,7 +946,7 @@ header .logo-mob {
 .news_right .news_item:nth-child(1) .news_item-subtitle {
     color: #56595D;
 }
-.news_right .news_item:nth-child(1) .news_item-img img {
+.news_right .news_item:nth-child(1) .news_item-img {
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
 }

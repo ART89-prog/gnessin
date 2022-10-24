@@ -95,6 +95,9 @@
     .menu_open header {
         background: #595959;
     }
+    .menu_open header .logo-mob {
+        order: 0;
+    }
     header .logo-mob {
         display: block;
     }
