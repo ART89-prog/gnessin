@@ -80,9 +80,9 @@
     }
     .releases_link-mob,
     .artists_link-mob {
-        display: inline-block;
-        margin-top: 30px;
-        margin-left: 0;
+        display: block;
+        margin: 30px auto 0;
+        width: 150px;
     }
     .artists .cont:before {
         height: 79px;
