@@ -98,6 +98,41 @@
     .artists {
         padding: 60px 0 60px;
     }
+    .news_left {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .news_left .news_item:nth-child(1) .news_item-info {
+        width: 50%;
+    }
+    .news_left .news_item:nth-child(1) .news_item-img {
+        width: 50%;
+    }
+    .news_right {
+        width: 100%;
+        display: flex;
+    }
+    .news_right .news_item:nth-child(2) {
+        margin-top: 0;
+        width: calc(50% - 13px);
+    }
+    .news_right .news_item:nth-child(1) {
+        margin-bottom: 0;
+        width: calc(50% - 13px);
+        margin-right: 20px;
+    }
+    .news_right .news_item:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        line-height: 1.2;
+    }
+    .news_top .news_item:nth-child(1) {
+        padding-bottom: 100px;
+    }
+
+
 
 
 
