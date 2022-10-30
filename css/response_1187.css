@@ -15,7 +15,7 @@
         display: flex;
         overflow: auto;
 
-        width: 295px;
+        width: 100%;
         height: 100%;
         min-height: -moz-available;
         min-height: -webkit-fill-available;
@@ -28,7 +28,7 @@
 
         background: #fff;
 
-        justify-content: flex-start;
+        justify-content: center;
         align-items: flex-start;
         align-content: flex-start;
         flex-wrap: wrap;
@@ -36,9 +36,7 @@
     header .menu.show {
         transform: translateX(0);
     }
-    header .close_btn {
-        display: flex;
-    }
+   
     .menu_open header .mob_menu_btn {
         display: none;
     }
@@ -47,6 +45,7 @@
     }
     header .menu .item {
         width: 100%;
+        margin-right: 0;
     }
     header .menu .item + .item {
         margin-left: 0;
@@ -55,7 +54,7 @@
         display: block;
         height: auto;
         padding: 12px 0;
-        text-align: left;
+        text-align: center;
         color: #000;
     }  
     .mob_menu_btn span {
@@ -95,8 +94,12 @@
     .menu_open header {
         background: #595959;
     }
+    header .logo-mob{
+        order: 0 !important;
+    }
     .menu_open header .logo-mob {
-        order: 0;
+        margin-bottom: 20px;
+        
     }
     header .logo-mob {
         display: block;

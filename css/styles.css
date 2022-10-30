@@ -46,6 +46,10 @@ body {
     text-decoration-skip: objects;
 }
 
+body.menu_open{
+    overflow: hidden;
+}
+
 img {
     border-style: none;
 }
@@ -417,16 +421,16 @@ header .close_btn {
     top: 24px;
     right: 28px;
     display: none;
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    z-index: 200;
 }
 
 header .close_btn img {
-    display: block;
     width: 28px;
 }
 
@@ -817,6 +821,7 @@ header .logo-mob {
 .news_item-img {
     overflow: hidden;
     display: block;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 .news_item-img img {
     width: 100%;
@@ -860,7 +865,7 @@ header .logo-mob {
     border-bottom-right-radius: 12px;
 }
 .news_item img {
-    transition: all .3s;
+    transition: transform .3s;
 }
 .news_item:hover img {
     transform: scale(1.1); 
