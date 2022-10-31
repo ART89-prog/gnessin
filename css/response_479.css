@@ -162,6 +162,16 @@
         width: 100%;
     }
 
+    .videos_items {
+        margin-left: 0px;
+        margin-bottom: -20px;
+    }
+    .videos_items > * {
+        margin-left: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
     .music_modal {
         padding: 45px 20px 25px;
     }

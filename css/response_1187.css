@@ -283,6 +283,16 @@
         margin-bottom: 25px;
         width: calc(100%/3 - 25px);
     }
+
+    .videos_items {
+        margin-left: -25px;
+        margin-bottom: -25px;
+    }
+    .videos_items > * {
+        margin-left: 25px;
+        margin-bottom: 25px;
+        width: calc(100%/3 - 25px);
+    }
     
 
 

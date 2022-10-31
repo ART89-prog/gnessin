@@ -192,7 +192,8 @@
     .page .releases {
         margin-bottom: 115px;
     }
-    .music {
+    .music,
+    .videos {
         margin-top: 50px;
     }
 

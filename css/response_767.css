@@ -232,13 +232,26 @@
         width: calc(100%/2 - 20px);
     }
 
-    .music {
+    .videos_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .videos_items > * {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: calc(100%/2 - 20px);
+    }
+
+    .music,
+    .videos {
         margin-top: 40px;
     }
-    .music_item-img {
+    .music_item-img,
+    .videos_item-img {
         margin-bottom: 10px;
     }
-    .music_item-title {
+    .music_item-title,
+    .videos_item-title {
         margin-bottom: 4px;
     }
     .pagination a.next {
@@ -259,11 +272,13 @@
         margin-left: 7px;
         margin-right: 7px;
     }
-    .music_item-text {
+    .music_item-text,
+    .videos_item-text {
         font-size: 16px;
         line-height: 20px;
     }
-    .music_item-title {
+    .music_item-title,
+    .videos_item-title {
         font-size: 18px;
     }
     .pagination {
