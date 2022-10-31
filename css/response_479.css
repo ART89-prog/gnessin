@@ -185,7 +185,9 @@
         margin-left: 0px;
         margin-bottom: 20px;
     }
-    .album {
+    .album,
+    .service,
+    .pagination {
         margin-bottom: 40px;
     }
 

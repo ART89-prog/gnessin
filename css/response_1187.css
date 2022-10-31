@@ -312,6 +312,22 @@
     
 
 
+    .service_items {
+        margin-left: -25px;
+        margin-bottom: -25px;
+    }
+    .service_items > * {
+        width: calc(100%/3 - 25px);
+        margin-left: 25px;
+        margin-bottom: 25px;
+        padding: 30px;
+    }
+    .service_item-title br {
+        display: none;
+    }
+    .service_item-text br {
+        display: none;
+    }
 
 
 

@@ -1729,7 +1729,8 @@ p.mb0 {
 .music,
 .videos,
 .artist,
-.card {
+.card,
+.service {
     margin-top: 66px;
 }
 .videos_items {
@@ -1886,7 +1887,8 @@ p.mb0 {
 
 
 /* album */
-.album {
+.album,
+.service {
     margin-bottom: 120px;
 }
 .album_item {
@@ -1937,16 +1939,7 @@ p.mb0 {
 
 
 
-.service {
-}
-.cont {
-}
-.releases_top {
-}
-.service_title {
-}
-.title {
-}
+/* service */
 .service_items {
     margin-left: -48px;
     margin-bottom: -84px;
@@ -1985,7 +1978,6 @@ p.mb0 {
 .service_item-btn {
     text-decoration: none;
     margin-top: auto;
-    display: inline-block;
     background: #55002B;
     border-radius: 100px;
     padding: 12px 20px;
@@ -1993,9 +1985,13 @@ p.mb0 {
     font-size: 16px;
     color: #FFFFFF;
     text-align: start;
+    width: 116px;
 }
 
 
+
+
+/* contacts  */
 .map_wrap {
     position: relative;
     overflow: hidden;

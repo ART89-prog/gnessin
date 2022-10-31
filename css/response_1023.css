@@ -196,7 +196,8 @@
     .music,
     .videos,
     .artist,
-    .card {
+    .card,
+    .service {
         margin-top: 50px;
     }
 
@@ -214,10 +215,22 @@
     .card_title {
         margin-bottom: 0px;
     }
-    .album {
+    .album,
+    .service,
+    .pagination {
         margin-bottom: 80px;
     }
 
+
+    .service_items > * {
+        width: calc(100%/2 - 25px);
+        padding: 25px;
+    }
+    .service_item-title {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
    
 
 
