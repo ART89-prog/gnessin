@@ -222,6 +222,58 @@
         margin-bottom: 70px;
     }
 
+    .music_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .music_items > * {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: calc(100%/2 - 20px);
+    }
+
+    .music {
+        margin-top: 40px;
+    }
+    .music_item-img {
+        margin-bottom: 10px;
+    }
+    .music_item-title {
+        margin-bottom: 4px;
+    }
+    .pagination a.next {
+        margin-left: 10px;
+    }
+    .pagination a.prev {
+        margin-right: 10px;
+    }
+    .pagination a {
+        font-size: 11px;
+        line-height: 24px;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .pagination span {
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .music_item-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .music_item-title {
+        font-size: 18px;
+    }
+    .pagination {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .pagination a img {
+        width: 72%;
+    }
+
 
 
 
