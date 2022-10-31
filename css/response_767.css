@@ -247,7 +247,9 @@
     .videos,
     .artist,
     .card,
-    .service {
+    .service,
+    .news,
+    .contacts {
         margin-top: 40px;
     }
     .music_item-img,
@@ -358,6 +360,26 @@
     }
 
 
+    .contacts_info {
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+    .contacts_info > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 22px;
+    }
+    .callback_form .columns {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .callback_form .columns > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .map_wrap {
+        height: 290px;
+    }
 
 
 

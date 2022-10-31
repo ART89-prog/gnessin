@@ -138,12 +138,11 @@
 				</div>
 
 
-				<section class="contacts">
+				<section class="contacts block">
 					<div class="cont">
 						<div class="releases_top">
 							<div class="releases_title title">Контакты</div>	
-						</div>	
-						
+						</div>							
 						<div class="contacts_box">
 							<div class="contacts_info">
 								<div class="contacts_item">
@@ -165,14 +164,17 @@
 										<img src="images/location.svg" alt="">
 										<span>Адрес офиса:</span>
 									</div>
-									<div class="contacts_item-text">г. Москва, Ленинградский пр-д, 5, стр.1, оф. 11-172</div>
+									<div class="contacts_item-text">г. Москва, Ленинградский пр-д, 5,<br> стр.1, оф. 11-172</div>
 								</div>
 								<div class="contacts_item">
 									<div class="contacts_item-title">
 										<img src="images/time.svg" alt="">
 										<span>График работы: </span>
 									</div>
-									<div class="contacts_item-text"> Понедельник - Пятница с 09:00 - 18:00<br> Суббота - Воскресенье Выходной</div>
+									<div class="contacts_item-text">
+										<p>Понедельник - Пятница<br> с 09:00 - 18:00</p>
+										<p>Суббота - Воскресенье<br> Выходной</p>										
+									</div>
 								</div>
 							</div>
 							<div class="map_wrap">
@@ -183,28 +185,45 @@
 				</section>
 
 
-
-
-				<form>
-					<div class="line">
-						<div class="field">
-							<input type="text" placeholder="Ваше имя:">
-						</div>
-						<div class="field">
-							<input type="tel" placeholder="Телефон:" inputmode="verbatim">
+				<section class="contacts-callback block">
+					<div class="cont">
+						<div class="callback_box">
+							<div class="releases_subtitle">Обратная связь</div>
+							<form class="callback_form">
+								<div class="columns">
+									<div class="line">
+										<div class="field">
+											<label for="name">Имя</label>
+											<input id="name" type="text" placeholder="Введите имя...">
+										</div>
+									</div>	
+									<div class="line">
+										<div class="field">
+											<label for="phone">Телефон</label>
+											<input id="phone" type="tel" placeholder="Введите номер телефона...">
+										</div>
+									</div>	
+								</div>
+								<div class="line">	
+									<div class="field">
+										<label for="message">Сообщение</label>
+										<textarea id="message" placeholder="Введите текст сообщения..."></textarea>		
+									</div>						
+								</div>				
+							
+								<button type="submit" class="btn">
+									<span>Отправить</span>
+								</button>                                  
+								
+							</form>
 						</div>
 					</div>
-					<div class="line">
-						<div class="fieldset">
-							<textarea placeholder="Введите текст:"></textarea>
-						</div>                                
-					</div>				
+				</section>
+
+
+
+
 				
-					<button type="submit" class="btn">
-						<span>Отправить</span>
-					</button>                                   
-					
-				</form>
 
 
 			</div>
