@@ -195,7 +195,8 @@
     .about,
     .music,
     .videos,
-    .artist {
+    .artist,
+    .card {
         margin-top: 50px;
     }
 
@@ -208,6 +209,13 @@
         width: calc(100%/3 - 20px);
         margin-left: 20px;
         margin-bottom: 20px;
+    }
+
+    .card_title {
+        margin-bottom: 0px;
+    }
+    .album {
+        margin-bottom: 80px;
     }
 
    

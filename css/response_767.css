@@ -245,7 +245,8 @@
     .about,
     .music,
     .videos,
-    .artist {
+    .artist,
+    .card {
         margin-top: 40px;
     }
     .music_item-img,
@@ -300,6 +301,39 @@
     .artist_item-title br {
         display: none;
     }
+
+    .card_item {
+        flex-direction: column;
+    }
+    .card_item-info {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .card_item-post {
+        margin-bottom: 15px;
+    }
+    .card_item-text {
+        margin-bottom: 20px;
+    }
+    .album_item {
+        padding: 20px;
+    }
+    .album_item-img {
+        margin-bottom: 14px;
+    }
+    .album_item-name {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+    .album {
+        margin-bottom: 60px;
+    }
+
+    .card_item-name {
+        font-size: 20px;
+    }
+ 
 
 
 

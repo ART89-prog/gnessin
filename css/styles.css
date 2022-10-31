@@ -563,7 +563,8 @@ header .logo-mob {
 }
 .slider-arrows,
 .slider-arrows2,
-.slider-arrows3 {
+.slider-arrows3,
+.slider-arrows4 {
     display: flex;
 }
 .releases_item-img,
@@ -1727,7 +1728,8 @@ p.mb0 {
 .about,
 .music,
 .videos,
-.artist {
+.artist,
+.card {
     margin-top: 66px;
 }
 .videos_items {
@@ -1786,6 +1788,7 @@ p.mb0 {
     width: calc(100%/6 - 48px);
     margin-left: 48px;
     margin-bottom: 48px;
+    text-decoration: none;
 }
 .artist_item-title {
     font-weight: 800;
@@ -1817,4 +1820,117 @@ p.mb0 {
     height: 100%;
     object-fit: cover;
     border-radius: 100px 100px 100px 24px;
+}
+
+
+
+/* card */
+.card_title {
+    margin-bottom: 102px;
+}
+.card_item {
+    display: flex;
+}
+.card_item-photo {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+.card_item-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px 100px 100px 24px;
+}
+.card_item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 48px;
+}
+.card_item-name {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #2C3036; 
+    margin-bottom: 8px;
+}
+.card_item-post {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    color: #56595D; 
+    margin-bottom: 26px;
+}
+.card_item-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #56595D;
+}
+.card_item-links {
+    display: flex;
+}
+.card_item-links a {
+    position: relative;
+    height: 36px;
+    text-decoration: none;
+    margin-right: 8px;
+    top: 0;
+    transition: all 0.4s;
+}
+.card_item-links a:hover {
+    top: -5px;
+}
+
+
+/* album */
+.album {
+    margin-bottom: 120px;
+}
+.album_item {
+    background: #F2EEE9;
+    border-radius: 12px;
+    padding: 40px;
+}
+.album_items .slick-track {
+    display: flex;
+    align-items: stretch;
+}
+.album_items .slick-slide.slides {
+    height: auto;
+    flex: 0 0 auto;
+}
+.album_item-name {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    color: #2C3036;
+    margin-bottom: 28px;
+}
+.album_item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.album_item-img {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    margin-bottom: 28px;
+    border-radius: 16px;
+}
+.album_item ol {
+    padding-left: 20px;
+}
+.album_item ol li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #56595D;    
 }
