@@ -155,12 +155,15 @@
     .advantages, 
     .quote, 
     .callback, 
-    .news {
+    .news,
+    .block {
         margin-bottom: 50px;
     }
     .releases_top, 
     .news_head, 
-    .advantages_title {
+    .advantages_title,
+    .about_title,
+    .breadcrumbs {
         margin-bottom: 25px;
     }
     .callback_title {
@@ -184,6 +187,21 @@
     .quote {
         padding: 80px 0 30px;
     }
+
+    .about_quote {
+        padding: 50px 0px 50px;
+    }
+    .about_description-title {
+        font-size: 20px;
+    }
+    .about_description-box {
+        margin-bottom: 25px;
+    }
+    .about_quote-text {
+        font-size: 18px;
+    }
+
+
 
 
 

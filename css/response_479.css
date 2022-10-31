@@ -112,7 +112,9 @@
     }
     .releases_top, 
     .news_head, 
-    .advantages_title {
+    .advantages_title,
+    .about_title,
+    .breadcrumbs {
         margin-bottom: 18px;
     }
     .advantages_title {
@@ -129,6 +131,24 @@
 
   
     .slick-list{padding:0 25% 0 0 !important;}
+
+
+
+    .about_quote {
+        padding: 40px 0px 40px;
+    }
+    .about_description-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .about_description-text p {
+        margin-bottom: 7px;
+        font-size: 16px;
+    }
+    .breadcrumbs a,
+    .breadcrumbs {
+        font-size: 14px;
+    }
 
 
    

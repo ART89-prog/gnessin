@@ -133,7 +133,9 @@
     }
     .releases_top,
     .news_head,
-    .advantages_title {
+    .advantages_title,
+    .about_title,
+    .breadcrumbs {
         margin-bottom: 40px;
     }
     .callback_wrap {
@@ -145,6 +147,39 @@
     .artists {
         margin-bottom: 120px;
     }
+
+
+    .about_description-box {
+        flex-direction: column;
+    }
+    .about_description-text.mb64 {
+        margin-bottom: 0px;
+    }
+    .about_description-box .about_img {
+        margin-left: 0px;
+        width: 100%;
+        height: auto;  
+        margin-top: 20px;  
+    }
+    .about_description-box.second .about_img {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }  
+    .about_quote {
+        padding: 60px 0px 60px;
+    }
+    .about_description-title {
+        font-size: 24px;
+    }
+    .about_description-text p {
+        margin-bottom: 13px;
+    }
+    .about_description-box {
+        margin-bottom: 40px;
+    }
+
+   
 
 
 

@@ -263,6 +263,19 @@
     
 
 
+    .about_description-box .about_img {
+        margin-left: 25px;
+    }
+    .about_description-box.second .about_img {
+        margin-right: 25px;
+    }    
+    .about_description-box .about_img {
+        width: 445px;
+        height: 305px;
+    }
+    
+
+
 
 
 
