@@ -330,5 +330,17 @@
     }
 
 
+    .news-slider_item-title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+    .post-one .post_item-img {
+        width: 480px;
+        height: 328px;
+        margin-right: 25px;
+    }
+
+
 
 }

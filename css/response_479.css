@@ -198,6 +198,24 @@
         margin-top: 15px;
     }
 
+    .post_item-img {
+        width: 100%;
+        height: auto;
+    }
+    .news_date {
+        margin-top: 18px;
+    }
+
+    .post-one .post_item-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .service-callback {
+        padding: 15px 20px 25px;
+    }
+
 
 
    

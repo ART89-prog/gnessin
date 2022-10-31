@@ -249,7 +249,8 @@
     .card,
     .service,
     .news,
-    .contacts {
+    .contacts,
+    .post {
         margin-top: 40px;
     }
     .music_item-img,
@@ -330,7 +331,8 @@
     }
     .album,
     .service,
-    .pagination {
+    .pagination,
+    .news-slider {
         margin-bottom: 60px;
     }
 
@@ -379,6 +381,33 @@
     }
     .map_wrap {
         height: 290px;
+    }
+
+    .news-slider_item-title {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 8px;
+    }
+
+    .post_item {
+        flex-direction: column;
+    }
+    .post_item-img {
+        margin: 0 auto 15px;
+    }
+    .post_item-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .news_item-description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .post-one .post_item-img {
+        width: 420px;
+        height: 287px;
+        margin: 0 auto 25px;
     }
 
 

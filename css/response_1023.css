@@ -199,7 +199,8 @@
     .card,
     .service,
     .news,
-    .contacts {
+    .contacts,
+    .post {
         margin-top: 50px;
     }
 
@@ -219,7 +220,8 @@
     }
     .album,
     .service,
-    .pagination {
+    .pagination,
+    .news-slider {
         margin-bottom: 80px;
     }
 
@@ -274,6 +276,26 @@
     }
     .contacts_item-text p {
         margin-bottom: 5px;
+    }
+
+    .news-slider_item-title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .post_item-img {
+        width: 380px;
+        height: 482px;
+        margin-right: 25px;
+    }
+    .news_date {
+        margin-top: 32px;
+        margin-bottom: 14px;
+    }
+    .post-one .post_item-img {
+        width: 380px;
+        height: 260px;
     }
 
 
