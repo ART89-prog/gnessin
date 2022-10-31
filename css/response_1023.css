@@ -134,8 +134,7 @@
     .releases_top,
     .news_head,
     .advantages_title,
-    .about_title,
-    .breadcrumbs {
+    .about_title {
         margin-bottom: 40px;
     }
     .callback_wrap {
@@ -177,6 +176,21 @@
     }
     .about_description-box {
         margin-bottom: 40px;
+    }
+
+
+    .releases_bottom {
+        margin-bottom: 24px;
+    }
+    .releases_subtitle {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    .page .releases .cont:before {
+        bottom: -120px;
+    }
+    .page .releases {
+        margin-bottom: 115px;
     }
 
    

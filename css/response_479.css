@@ -113,8 +113,7 @@
     .releases_top, 
     .news_head, 
     .advantages_title,
-    .about_title,
-    .breadcrumbs {
+    .about_title {
         margin-bottom: 18px;
     }
     .advantages_title {
@@ -148,6 +147,9 @@
     .breadcrumbs a,
     .breadcrumbs {
         font-size: 14px;
+    }
+    .about {
+        margin-top: 40px;
     }
 
 

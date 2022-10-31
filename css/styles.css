@@ -561,7 +561,9 @@ header .logo-mob {
     color: var(--bg2);
     margin-right: 28px;
 }
-.slider-arrows {
+.slider-arrows,
+.slider-arrows2,
+.slider-arrows3 {
     display: flex;
 }
 .releases_item-img,
@@ -1459,10 +1461,10 @@ footer .contact_callback-red {
     box-shadow: 0px 3px 2px #C8C8C6;     
 }
 .about {
-    margin-top: 136px;
+    margin-top: 66px;
 }
 .breadcrumbs {
-    margin-bottom: 66px;
+    margin-top: 136px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -1547,4 +1549,39 @@ p.mb0 {
 }
 .page .artists {
     margin-bottom: 193px;
+}
+
+.page .releases {
+    margin-bottom: 187px;
+    background: linear-gradient(180deg, rgba(242, 238, 233, 0) 0%, #F2EEE9 100%);
+}
+.releases_subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #2C3036;
+    margin-right: 28px;
+}
+.releases_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.video {
+    margin-top: 64px;    
+}
+.page .releases .cont {
+    position: relative;
+}
+.page .releases .cont:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 132px;
+    left: 0;
+    bottom: -150px;
+    background: url(../images/line.svg);
 }
