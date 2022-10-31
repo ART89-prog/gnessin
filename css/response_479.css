@@ -176,6 +176,17 @@
         padding: 45px 20px 25px;
     }
 
+    .artist_items {
+        margin-left: 0px;
+        margin-bottom: -20px;
+    }
+    .artist_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+
 
    
 }

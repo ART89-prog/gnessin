@@ -293,6 +293,17 @@
         margin-bottom: 25px;
         width: calc(100%/3 - 25px);
     }
+
+
+    .artist_items {
+        margin-left: -25px;
+        margin-bottom: -25px;
+    }
+    .artist_items > * {
+        width: calc(100%/5 - 25px);
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
     
 
 

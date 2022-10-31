@@ -242,8 +242,10 @@
         width: calc(100%/2 - 20px);
     }
 
+    .about,
     .music,
-    .videos {
+    .videos,
+    .artist {
         margin-top: 40px;
     }
     .music_item-img,
@@ -287,6 +289,16 @@
     }
     .pagination a img {
         width: 72%;
+    }
+
+
+    .artist_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .artist_item-title br {
+        display: none;
     }
 
 

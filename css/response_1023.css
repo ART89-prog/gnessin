@@ -192,9 +192,22 @@
     .page .releases {
         margin-bottom: 115px;
     }
+    .about,
     .music,
-    .videos {
+    .videos,
+    .artist {
         margin-top: 50px;
+    }
+
+
+    .artist_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .artist_items > * {
+        width: calc(100%/3 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
     }
 
    
