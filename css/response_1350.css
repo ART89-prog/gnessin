@@ -9,9 +9,6 @@
     .news_right .news_item:nth-child(1) {
         margin-bottom: 25px;
     }
-    .news_right .news_item:nth-child(2) {
-        margin-top: 25px;
-    }
     .news_left .news_item:nth-child(1) {
         margin-bottom: 25px;
     }
@@ -57,9 +54,10 @@
     }
     .news_right .news_item:nth-child(2) {
         font-size: 28px;
+        height: 100%;
     }
     .page .news_right .news_item:nth-child(2) {
-        height: 285px;
+        height: 100%;
     }
     .news_left .news_item:nth-child(3) .news_item-img {
         width: 100%;

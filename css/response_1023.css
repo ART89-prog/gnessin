@@ -317,11 +317,20 @@
     .about .about_description img {
         width: 400px;
         height: 273px;
+    }
+    .about .about_description img.right { 
         margin-left: 24px;
+        margin-bottom: 24px;
+    }
+    .about .about_description img.left {
+        margin-right: 24px;
         margin-bottom: 24px;
     }
     .about p {
         font-size: 16px;
+    }
+    .news_right {
+        flex-direction: row;
     }
 
     

@@ -296,6 +296,12 @@ button {
     display: flex;
 }
 
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
 
 
 
@@ -885,6 +891,8 @@ header .logo-mob {
 .news_right {
     width: 416px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
 }
 .news_right .news_item:nth-child(2):hover img {
     transform: translateX(15px);
@@ -980,7 +988,6 @@ header .logo-mob {
     font-size: 32px;
     line-height: 36px;
     color: #FFFFFF;
-    margin-top: 48px;
     display: flex;
     flex-direction: column;
 }
@@ -1502,15 +1509,22 @@ footer .contact_callback-red {
     line-height: 24px;
     color: var(--text_color);
 }
-.about .about_description img {
-    margin-left: 48px;
-    margin-bottom: 48px;
+.about .about_description img {   
     width: 647px;
     height: 443px;
     flex-shrink: 0;    
     border-radius: 12px;
     display: block; 
+}
+.about .about_description img.right { 
+    margin-left: 48px;
+    margin-bottom: 48px;
     float: right;
+}
+.about .about_description img.left {
+    float: left;
+    margin-right: 48px;
+    margin-bottom: 48px;
 }
 
 
@@ -2278,3 +2292,5 @@ footer .contact_callback-red {
     margin-top: 21px;
     height: 40px;
 }
+
+

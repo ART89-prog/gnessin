@@ -423,10 +423,13 @@
         margin-bottom: 60px;
     }
 
-    .about .about_description img {
+
+    .about .about_description img.right { 
         float: none;
-        margin-left: 0px;
-        margin-bottom: 24px;
+        margin: 0 auto 20px;
+    }
+    .about .about_description img.left {
+        float: none;
         margin: 0 auto 20px;
     }
     .about h2 {
