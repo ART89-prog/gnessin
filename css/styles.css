@@ -1519,6 +1519,7 @@ footer .contact_callback-red {
 .about_quote {
     padding: 80px 0px 90px;
     background: #F2EEE9;
+    clear: both;
 }
 .about_quote-text {
     font-weight: 800;
