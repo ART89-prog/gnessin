@@ -333,10 +333,10 @@
         line-height: 32px;
         margin-bottom: 12px;
     }
-    .post .text_block img {
-        width: 480px;
-        height: 328px;
-        margin-right: 25px;
+
+
+    .block {
+        margin-bottom: 100px;
     }
 
 

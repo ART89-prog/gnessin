@@ -160,9 +160,8 @@
         margin-bottom: 50px;
     }
     .releases_top, 
-    .news_head, 
-    .advantages_title,
-    .about_title {
+    .news_head,
+    .text_block h1 {
         margin-bottom: 25px;
     }
     .callback_title {
@@ -190,7 +189,7 @@
     .about_quote {
         padding: 50px 0px 50px;
     }
-    .about_description-title {
+    .about h2 {
         font-size: 20px;
     }
     .about_description-box {
@@ -393,7 +392,8 @@
         flex-direction: column;
     }
     .post .text_block img {
-        margin: 0 auto 15px;
+        margin: 15px auto;
+        display: block;
     }
     .post_item-text {
         font-size: 16px;
@@ -403,14 +403,35 @@
         font-size: 16px;
         line-height: 22px;
     }
+    .post .text_block img {
+        float: none;
+    }
 
     .post-one .text_block img {
         width: 420px;
         height: 287px;
         margin: 0 auto 25px;
     }
+    .post .text_block p:last-child {
+        margin-top: 0;
+    }
+    .post .text_block p {
+        margin-top: 16px;
+    }
 
+    .block {
+        margin-bottom: 60px;
+    }
 
+    .about .about_description img {
+        float: none;
+        margin-left: 0px;
+        margin-bottom: 24px;
+        margin: 0 auto 20px;
+    }
+    .about h2 {
+        margin-top: 24px;
+    }
 
     
 
