@@ -18,6 +18,11 @@
     .news_left .news_item:nth-child(2) {
         margin-right: 25px;
         max-width: 240px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .news_left .news_item:nth-child(2) .news_item-img {
+        height: 100%;
     }
     .news_left {
         margin-right: 25px;
@@ -52,12 +57,16 @@
     }
     .news_right .news_item:nth-child(2) {
         font-size: 28px;
+        height: 281px;
+    }
+    .page .news_right .news_item:nth-child(2) {
+        height: 285px;
     }
     .news_left .news_item:nth-child(3) .news_item-img {
         width: 100%;
     }
     .news_left .news_item:nth-child(3) .news_item-img img {
-        height: 284px;
+        height: 100%;
         width: 100%;
     }
 

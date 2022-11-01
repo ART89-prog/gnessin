@@ -568,6 +568,9 @@ header .logo-mob {
 .slider-arrows5 {
     display: flex;
 }
+.releases_item {
+    text-decoration: none;
+}
 .releases_item-img,
 .artists_item-img {
     position: relative;
@@ -696,9 +699,6 @@ header .logo-mob {
 /* advantages */
 .advantages {
     margin-bottom: 160px;
-}
-.advantages_title {
-    margin-bottom: 64px;
 }
 .advantages_items {
     display: flex;
@@ -971,7 +971,6 @@ header .logo-mob {
     font-weight: 700;
     font-size: 32px;
     line-height: 36px;
-    text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 48px;
     display: flex;
@@ -983,6 +982,9 @@ header .logo-mob {
     width: 160px;
     height: 26px;
     transition: all .4s;
+}
+.page .news_right .news_item:nth-child(2) {
+    height: 202px;
 }
 
 
@@ -1476,9 +1478,6 @@ footer .contact_callback-red {
     line-height: 20px;
     color: var(--text_color);   
 }
-.about_title {
-    margin-bottom: 64px;
-}
 .about_description-title {
     font-weight: 800;
     font-size: 28px;
@@ -1567,6 +1566,15 @@ p.mb0 {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 48px;
+}
+
+.post .text_block h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: var(--text_color);
+    margin-right: 28px;
 }
 
 .video {
@@ -1833,9 +1841,6 @@ p.mb0 {
 
 
 /* card */
-.card_title {
-    margin-bottom: 102px;
-}
 .card_item {
     display: flex;
 }
@@ -1879,6 +1884,7 @@ p.mb0 {
 }
 .card_item-links {
     display: flex;
+    margin-top: 20px;
 }
 .card_item-links a {
     position: relative;
@@ -1898,6 +1904,12 @@ p.mb0 {
 .service,
 .news-slider {
     margin-bottom: 120px;
+}
+.post {
+    margin-bottom: 64px;
+}
+.news-slider {
+    clear: both;
 }
 .album_item {
     background: #F2EEE9;
@@ -2147,26 +2159,27 @@ p.mb0 {
     color: var(--text_color);
     margin-bottom: 24px;
 }
-.news_item-description {
+.post .text_block p {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     color: var(--text_color);
-    margin-top: 16px;
+    margin-top: 16px; 
+}
+.post .text_block p:last-child {
+    margin-top: 64px;
 }
 .post_item {
     display: flex;
 }
-.post_item-img {
+.post .text_block img {
     width: 416px;
     height: 528px;
     margin-right: 48px;
+    margin-top: 64px;
+    margin-bottom: 64px;
     flex-shrink: 0;
-}
-.post_item-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    float: left;
 }
 .post_item-text {
     font-weight: 500;
@@ -2219,8 +2232,6 @@ p.mb0 {
 
 
 
-.modal {
-}
 .service-callback {
     padding: 15px 40px 55px;
     background: #FFFFFF;
@@ -2228,6 +2239,7 @@ p.mb0 {
     border-radius: 10px;
     max-width: 450px;
     width: 100%;
+    display: none;
 }
 .service-callback_title {
     font-weight: 700;

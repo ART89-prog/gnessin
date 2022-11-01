@@ -124,6 +124,11 @@
         width: calc(50% - 13px);
         height: auto;
     }
+    .page .news_right .news_item:nth-child(2) {
+        display: block;
+        width: calc(50% - 13px);
+        height: auto;
+    }
     .news_top .news_item:nth-child(1) {
         padding-bottom: 100px;
     }
@@ -182,7 +187,7 @@
     .releases_bottom {
         margin-bottom: 24px;
     }
-    .releases_subtitle {
+    .post .text_block h2 {
         font-size: 24px;
         line-height: 1.5;
     }
@@ -284,7 +289,7 @@
         margin-bottom: 10px;
     }
 
-    .post_item-img {
+    .post .text_block img {
         width: 380px;
         height: 482px;
         margin-right: 25px;
@@ -293,7 +298,7 @@
         margin-top: 32px;
         margin-bottom: 14px;
     }
-    .post-one .post_item-img {
+    .post-one .text_block img {
         width: 380px;
         height: 260px;
     }

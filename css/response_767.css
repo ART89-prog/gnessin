@@ -209,6 +209,9 @@
     .releases_subtitle {
         font-size: 20px;
     }
+    .post .text_block h2 {
+        font-size: 20px;
+    }
     .releases_bottom {
         margin-bottom: 15px;
     }
@@ -301,9 +304,6 @@
         margin-left: 20px;
         margin-bottom: 20px;
     }
-    .artist_item-title br {
-        display: none;
-    }
 
     .card_item {
         flex-direction: column;
@@ -392,19 +392,19 @@
     .post_item {
         flex-direction: column;
     }
-    .post_item-img {
+    .post .text_block img {
         margin: 0 auto 15px;
     }
     .post_item-text {
         font-size: 16px;
         line-height: 22px;
     }
-    .news_item-description {
+    .post .text_block p {
         font-size: 16px;
         line-height: 22px;
     }
 
-    .post-one .post_item-img {
+    .post-one .text_block img {
         width: 420px;
         height: 287px;
         margin: 0 auto 25px;

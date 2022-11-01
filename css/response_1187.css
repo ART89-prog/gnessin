@@ -306,9 +306,7 @@
     }
 
 
-    .card_title {
-        margin-bottom: 50px;
-    }
+  
     
 
 
@@ -335,7 +333,7 @@
         line-height: 32px;
         margin-bottom: 12px;
     }
-    .post-one .post_item-img {
+    .post .text_block img {
         width: 480px;
         height: 328px;
         margin-right: 25px;
