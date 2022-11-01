@@ -192,9 +192,6 @@
     .news_left .news_item:nth-child(2) .news_item-img {
         height: 255px;
     }
-    .news_left .news_item:nth-child(3) .news_item-img {
-        height: 255px;
-    }
     .news_right .news_item:nth-child(2) {
         padding-top: 65px;
         padding-bottom: 65px;
